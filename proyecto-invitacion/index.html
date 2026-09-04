@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>¡Feliz cumpleaños!</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Tangerine:wght@700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<button class="edit-toggle" id="editToggle" hidden>Editar texto</button>
+
+<div class="stage" id="stage">
+  <div class="card" id="card">
+
+    <div class="face front" id="frontFace">
+      <img src="assets/images/cover.jpg" alt="Feliz cumpleaños">
+      <div class="front-shade"></div>
+    </div>
+
+    <div class="face back">
+      <div class="frame-box">
+        <div class="close-zone" id="closeZone" aria-label="Volver a la portada"></div>
+        <div class="invite">
+          <h1 contenteditable="false" spellcheck="false" id="titleText">Feliz cumple Daniel!</h1>
+          <p class="dedication" contenteditable="false" spellcheck="false" id="dedicationText">Porque el jefe más TOP se merece un lunch especial</p>
+
+          <div class="divider"></div>
+
+          <div class="field-label">FECHA Y HORA</div>
+          <div class="datetime-row">
+            <div class="dt-field">
+              <label for="eventDate" class="sr-only">Fecha del evento</label>
+              <input type="date" id="eventDate">
+            </div>
+            <div class="dt-field"><div class="fixed-time">2:00 p.m.</div></div>
+          </div>
+
+          <div class="field-label">ELIGE EL LUGAR</div>
+          <div class="restaurants" id="restaurantGroup">
+            <label class="r-option">
+              <input type="radio" name="restaurant" value="Astoria">
+              <span class="dot"></span>
+              <span class="rtext"><span class="rname">Astoria</span><span class="rnote"></span></span>
+            </label>
+            <label class="r-option">
+              <input type="radio" name="restaurant" value="Compañía Criolla">
+              <span class="dot"></span>
+              <span class="rtext"><span class="rname">Compañía Criolla</span><span class="rnote"></span></span>
+            </label>
+          </div>
+
+          <button class="confirm-btn" id="confirmBtn">VAMOS!!</button>
+          <div class="status-note" id="statusNote"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
