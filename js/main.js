@@ -109,7 +109,7 @@
     statusNote.textContent = 'Abriendo WhatsApp...';
 
     const textoMensaje =
-      "Como no aceptar si eres lo más top Janice" +
+      "Obvio como no aceptar! si eres lo más top Janice" +
       "%0AFecha: " + dateFormatted +
       "%0AHora: " + HORA_FIJA +
       "%0ARestaurante: " + chosen.value;
