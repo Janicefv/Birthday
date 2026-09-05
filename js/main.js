@@ -88,7 +88,7 @@
     const chosen = document.querySelector('input[name="restaurant"]:checked');
 
     if(!date || !chosen){
-      showToast('Por favor elige la fecha y el restaurante');
+      showToast('Porfa elige la fecha y el restaurante');
       return;
     }
 
@@ -109,7 +109,7 @@
     statusNote.textContent = 'Abriendo WhatsApp...';
 
     const textoMensaje =
-      "Como no aceptarte si eres lo más top" +
+      "Como no aceptar si eres lo más top Janice" +
       "%0AFecha: " + dateFormatted +
       "%0AHora: " + HORA_FIJA +
       "%0ARestaurante: " + chosen.value;
